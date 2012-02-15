@@ -41,9 +41,11 @@ To use this middleware using Ring and [Compojure]():
 Run this app as you normally would and try the following at the command line:
 
 ```sh
-curl -X GET http://localhost:8080/
+$ curl -X GET http://localhost:8080/
 
-#=> {:hello :cleveland}                                                                                                                         curl -X PUT -H "Content-Type: application/clojure" \ 
+#=> {:hello :cleveland}                               
+
+$ curl -X PUT -H "Content-Type: application/clojure" \ 
   -d '{:name :barnabas}' \
   http://localhost:8080/ 
 
