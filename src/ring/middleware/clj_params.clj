@@ -10,7 +10,7 @@
   (fn [req]
     (if-let [body (and (clj-request? req) (:body req))]
       (let [bstr (slurp body)
-            clj-params (read-string bstr)
+            clj-params (binding [*read-eval* false] (read-string bstr))
             req* (assoc req
                    :clj-params clj-params
                    :params (merge (:params req) clj-params))]
