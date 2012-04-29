@@ -20,7 +20,7 @@ In your `:dependencies` section add the following:
 To use this middleware using Ring and [Compojure](https://github.com/weavejester/compojure), create a new Leiningen project with a `project.clj` file of the form:
 
 	 (defproject awesomeness "0.0.1"
-	   :description ""true power awesomeness
+	   :description "true power awesomeness"
 	   :dependencies [[org.clojure/clojure "1.3.0"]
 	                  [ring "1.0.2"]
 	                  [compojure "1.0.1"]
